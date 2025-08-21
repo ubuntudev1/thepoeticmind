@@ -1,0 +1,10 @@
+<h2>Approved Poems</h2>
+<% poems.forEach(poem => { %>
+  <div class="card mb-3 p-3">
+    <h5><%= poem.name %></h5>
+    <p>Email: <%= poem.email %> | Phone: <%= poem.phone %></p>
+    <p>Submitted: <%= poem.submittedAt.toLocaleString() %></p>
+    <p>Approved: <%= poem.vettedAt ? poem.vettedAt.toLocaleString() : 'N/A' %> by <%= poem.vettedBy || 'N/A' %></p>
+    <a href="/uploads/<%= poem.file %>" target="_blank">View Poem</a>
+  </div>
+<% }) %>

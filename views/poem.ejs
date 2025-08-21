@@ -1,0 +1,32 @@
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="card shadow-lg border-0 rounded-3 p-5" style="background: #fdfcfb;">
+        <!-- Poem Title -->
+        <h1 class="text-center mb-3" style="font-family: 'Georgia', serif; font-weight: bold; color: #2c3e50;">
+          <%= poem.title %>
+        </h1>
+
+        <!-- Category -->
+        <p class="text-center text-muted fst-italic mb-4">
+          by
+          <i class="bi bi-bookmark-heart"></i> <%= poem.author %>
+        </p>
+        <hr>
+
+        <!-- Poem Content -->
+        <div class="poem-content text-center" style="white-space: pre-line; font-family: 'Times New Roman', serif; font-size: 1.2rem; line-height: 2;">
+          <%= poem.content %>
+        </div>
+
+        <!-- Back Button -->
+        <div class="text-center mt-5">
+          <a href="/blog" class="btn btn-outline-dark px-4">
+            ← Back to <%= poem.category %> Poems
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

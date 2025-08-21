@@ -1,0 +1,21 @@
+
+
+  <div class="container mt-5 p-5">
+    <h2 class="mb-4 text-primary"><%= category %> Poems</h2>
+
+    <% if (poems.length === 0) { %>
+      <div class="alert alert-info">No poems found for this category.</div>
+    <% } else { %>
+      <div class="list-group">
+        <% poems.forEach(poem => { %>
+         <a href="/api/poems/poemDetail/<%= poem._id %>" class="list-group-item list-group-item-action">
+  <h5 class="mb-1"><%= poem.title %></h5>
+</a>
+
+            <small class="text-muted">by <%= poem.author || "Unknown" %></small>
+          </a>
+        <% }) %>
+      </div>
+    <% } %>
+  </div>
+

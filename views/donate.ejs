@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= title %></title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container mt-5" style="padding: 80px;">
+  <h1 class="text-center mb-4">Support Us ❤️</h1>
+  <form action="/donate/pay" method="POST" class="card p-4 shadow">
+    <div class="mb-3">
+      <label class="form-label">Your Email</label>
+      <input type="email" name="email" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Amount</label>
+      <input type="number" name="amount" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">We accept ₦ Nigerian Naira and $ US Dollars </label>
+      <select name="currency" class="form-select" required>
+        <option value="NGN">₦ Nigerian Naira</option>
+        <option value="USD">$ US Dollars</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn btn-success w-100">Donate Now</button>
+  </form>
+</div>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

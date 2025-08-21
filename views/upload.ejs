@@ -1,0 +1,67 @@
+
+
+  <div class="container mt-5" style="margin-top: 100px; padding: 80px;">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card shadow-lg border-0 rounded-3">
+          
+          <!-- Header -->
+          <div class="card-header bg-primary text-white text-center py-3 rounded-top">
+            <h4 class="mb-0">📜 Submit Your Poem</h4>
+          </div>
+          
+          <!-- Form Body -->
+          <div class="card-body p-4">
+            <form action="/form/submit" method="POST" enctype="multipart/form-data">
+              
+              <!-- Full Name -->
+              <div class="mb-3">
+                <label for="name" class="form-label fw-semibold">Full Name</label>
+                <input type="text" class="form-control" name="author" id="author" placeholder="name" required>
+              </div>
+
+              <!-- Email -->
+              <div class="mb-3">
+                <label for="email" class="form-label fw-semibold">Title</label>
+                <input type="title" class="form-control" name="title" id="title" placeholder="title" required>
+              </div>
+
+              <!-- Phone -->
+              <div class="mb-3">
+                <label for="phone" class="form-label fw-semibold">Categories</label>
+                <input type="text" class="form-control" name="category" id="category" placeholder="category" required>
+              </div>
+
+              <!-- Poem -->
+              <div class="mb-3">
+                <label for="poem" class="form-label fw-semibold">Write Your Poem</label>
+                <textarea class="form-control" name="content" id="content" rows="6" placeholder="Write your poem here..." required></textarea>
+              </div>
+
+              <!-- File Upload -->
+              <div class="mb-3">
+                <label for="file" class="form-label fw-semibold">Upload a Related File <small class="text-muted">(Optional)</small></label>
+                <input class="form-control" type="file" name="file" id="file">
+              </div>
+
+              <!-- Submit Button -->
+              <div class="d-grid">
+                <button type="submit" class="btn btn-success btn-lg rounded-pill">
+                  ✨ Submit Poem
+                </button>
+              </div>
+
+            </form>
+          </div>
+
+          <!-- Footer -->
+          <div class="card-footer text-center bg-light">
+            <small class="text-muted">Thank you for sharing your creativity with us 💙</small>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
